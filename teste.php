@@ -4,7 +4,7 @@
 
 
 
-        function potencia($pot1, $pot2, $pot3=0, $pot4=0){
+        function potencia($pot1, $pot2, $pot3=null, $pot4=null){
 
 
             if ($pot1 > $pot2 and $pot1 > $pot3 and $pot1 > $pot4){
