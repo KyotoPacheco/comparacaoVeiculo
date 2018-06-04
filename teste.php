@@ -4,81 +4,65 @@
 
 
 
-function potencia($potencia1, $potencia2, $potencia3=null, $potencia4=null){
+        function potencia($pot1, $pot2, $pot3=0, $pot4=0){
 
 
-            if ($potencia1 > $potencia2 and $potencia1 > $potencia3 and $potencia1 > $potencia4){
-                echo "A maior potencia é do carro 1 que chega a: $potencia1 cv \n";
-            } elseif ($potencia2 > $potencia1 and $potencia2 > $potencia3 and $potencia2 > $potencia4){
-                echo "A maior potencia é do carro 2 que chega a: $potencia2 cv \n";
-            } elseif ($potencia3 > $potencia1 and $potencia3 > $potencia2 and $potencia3 > $potencia4){
-                echo "A maior potencia é do carro 3 que chega a: $potencia3 cv \n";
+            if ($pot1 > $pot2 and $pot1 > $pot3 and $pot1 > $pot4){
+                echo "A maior potencia é do carro 1 que chega a: $pot1 cv \n";
+            } elseif ($pot2 > $pot1 and $pot2 > $pot3 and $pot2 > $pot4){
+                echo "A maior potencia é do carro 2 que chega a: $pot2 cv \n";
+            } elseif ($pot3 > $pot1 and $pot3 > $pot2 and $pot3 > $pot4){
+                echo "A maior potencia é do carro 3 que chega a: $pot3 cv \n";
             } else {
-                echo "A maior potencia é do carro 4 que chega a: $potencia4 cv \n";
+                echo "A maior potencia é do carro 4 que chega a: $pot4 cv \n";
             }
 
         };
 
-        function preco(){
+        function preco($pre1, $pre2, $pre3=100000000000, $pre4=100000000000){
 
-            $preco1 = 25000;
-            $preco2 = 100000;
-            $preco3 = 100;
-            $preco4 = 500;
 
-            if ($preco1 < $preco2 and $preco1 < $preco3 and $preco1 < $preco4){
-                echo "O menor preço a se pagar é do carro 1 que custa em torno de: R$ $preco1 reais \n";
-            } elseif ($preco2 < $preco1 and $preco2 < $preco3 and $preco2 < $preco4){
-                echo "O menor preço a se pagar é do carro 2 que custa em torno de: R$ $preco2 reais \n";
-            } elseif ($preco3 < $preco1 and $preco3 < $preco2 and $preco3 < $preco4){
-                echo "O menor preço a se pagar é do carro 3 que custa em torno de: R$ $preco3 reais \n";
+            if ($pre1 < $pre2 and $pre1 < $pre3 and $pre1 < $pre4){
+                echo "O menor preço a se pagar é do carro 1 que custa em torno de: R$ $pre1 reais \n";
+            } elseif ($pre2 < $pre1 and $pre2 < $pre3 and $pre2 < $pre4){
+                echo "O menor preço a se pagar é do carro 2 que custa em torno de: R$ $pre2 reais \n";
+            } elseif ($pre3 < $pre1 and $pre3 < $pre2 and $pre3 < $pre4){
+                echo "O menor preço a se pagar é do carro 3 que custa em torno de: R$ $pre3 reais \n";
             } else {
-                echo "O menor preço a se pagar é do carro 4 que custa em torno de: R$ $preco4 reais \n";
+                echo "O menor preço a se pagar é do carro 4 que custa em torno de: R$ $pre4 reais \n";
             }
         };
 
-        function altura(){
+        function altura($alt1, $alt2, $alt3=null, $alt4=null){
 
-            $altura1 = 1850;
-            $altura2 = 1450;
-            $altura3 = 2000;
-            $altura4 = 2001;
 
-            if ($altura1 > $altura2 and $altura1 > $altura3 and $altura1 > $altura4){
-                echo "O carro 1 é o mais alto entre eles e possui: $altura1 mm (milimetros) de altura \n";
-            } elseif ($altura2 > $altura1 and $altura2 > $altura3 and $altura2 > $altura4){
-                echo "O carro 2 é o mais alto entre eles e possui: $altura2 mm (milimetros) de altura \n";
-            } elseif ($altura3 > $altura1 and $altura3 > $altura2 and $altura3 > $altura4){
-                echo "O carro 3 é o mais alto entre eles e possui: $altura3 mm (milimetros) de altura \n";
+            if ($alt1 > $alt2 and $alt1 > $alt3 and $alt1 > $alt4){
+                echo "O carro 1 é o mais alto entre eles e possui: $alt1 mm (milimetros) de altura \n";
+            } elseif ($alt2 > $alt1 and $alt2 > $alt3 and $alt2 > $alt4){
+                echo "O carro 2 é o mais alto entre eles e possui: $alt2 mm (milimetros) de altura \n";
+            } elseif ($alt3 > $alt1 and $alt3 > $alt2 and $alt3 > $alt4){
+                echo "O carro 3 é o mais alto entre eles e possui: $alt3 mm (milimetros) de altura \n";
             } else {
-                echo "O carro 4 é o mais alto entre eles e possui: $altura4 mm (milimetros) de altura \n";
+                echo "O carro 4 é o mais alto entre eles e possui: $alt4 mm (milimetros) de altura \n";
             }
         };
 
-        function comprimento(){
+        function comprimento($com1, $com2, $com3=null, $com4=null){
 
-            $comprimento1 = 2203;
-            $comprimento2 = 2202;
-            $comprimento3 = 2201;
-            $comprimento4 = 2200;
 
-            if ($comprimento1 > $comprimento2 and $comprimento1 > $comprimento3 and $comprimento1 > $comprimento4){
-                echo "O carro 1 é o mais comprido entre eles e possui: $comprimento1 mm (milimetros) de comprimento \n";
-            } elseif ($comprimento2 > $comprimento1 and $comprimento2 > $comprimento3 and $comprimento2 > $comprimento4){
-                echo "O carro 2 é o mais comprido entre eles e possui: $comprimento2 mm (milimetros) de comprimento \n";
-            } elseif ($comprimento3 > $comprimento1 and $comprimento3 > $comprimento2 and $comprimento3 > $comprimento4){
-                echo "O carro 3 é o mais comprido entre eles e possui: $comprimento3 mm (milimetros) de comprimento \n";
+            if ($com1 > $com2 and $com1 > $com3 and $com1 > $com4){
+                echo "O carro 1 é o mais comprido entre eles e possui: $com1 mm (milimetros) de comprimento \n";
+            } elseif ($com2 > $com1 and $com2 > $com3 and $com2 > $com4){
+                echo "O carro 2 é o mais comprido entre eles e possui: $com2 mm (milimetros) de comprimento \n";
+            } elseif ($com3 > $com1 and $com3 > $com2 and $com3 > $com4){
+                echo "O carro 3 é o mais comprido entre eles e possui: $com3 mm (milimetros) de comprimento \n";
             } else {
-                echo "O carro 4 é o mais comprido entre eles e possui: $comprimento4 mm (milimetros) de comprimento \n";
+                echo "O carro 4 é o mais comprido entre eles e possui: $com4 mm (milimetros) de comprimento \n";
             }
         };
 
-        function velocidade(){
+        function velocidade($vel1, $vel2, $vel3=null, $vel4=null){
 
-            $vel1 = 160;
-            $vel2 = 150;
-            $vel3 = 140;
-            $vel4 = 130;
 
             if ($vel1 > $vel2 and $vel1 > $vel3 and $vel1 > $vel4){
                 echo "o carro 1 é o mais rápido com: $vel1 km/h \n";
@@ -91,93 +75,73 @@ function potencia($potencia1, $potencia2, $potencia3=null, $potencia4=null){
             }
         };
 
-        function tq_combustivel(){
+        function tq_combustivel($tqc1, $tqc2, $tqc3=null, $tqc4=null){
 
-            $tq_combustivel1 = 76;
-            $tq_combustivel2 = 75;
-            $tq_combustivel3 = 74;
-            $tq_combustivel4 = 73;
 
-            if ($tq_combustivel1 > $tq_combustivel2 and $tq_combustivel1 > $tq_combustivel3 and $tq_combustivel1 > $tq_combustivel4){
-                echo "o carro 1 é o que possui o maior tamque de combustivel com cerca de: $tq_combustivel1 litros \n";
-            } elseif ($tq_combustivel2 > $tq_combustivel1 and $tq_combustivel2 > $tq_combustivel3 and $tq_combustivel2 > $tq_combustivel4){
-                echo "o carro 2 é o que possui o maior tamque de combustivel com cerca de: $tq_combustivel2 litros \n";
-            } elseif ($tq_combustivel3 > $tq_combustivel2 and $tq_combustivel3 > $tq_combustivel1 and $tq_combustivel3 > $tq_combustivel4){
-                echo "o carro 3 é o que possui o maior tamque de combustivel com cerca de: $tq_combustivel3 litros \n";
+            if ($tqc1 > $tqc2 and $tqc1 > $tqc3 and $tqc1 > $tqc4){
+                echo "o carro 1 é o que possui o maior tamque de combustivel com cerca de: $tqc1 litros \n";
+            } elseif ($tqc2 > $tqc1 and $tqc2 > $tqc3 and $tqc2 > $tqc4){
+                echo "o carro 2 é o que possui o maior tamque de combustivel com cerca de: $tqc2 litros \n";
+            } elseif ($tqc3 > $tqc2 and $tqc3 > $tqc1 and $tqc3 > $tqc4){
+                echo "o carro 3 é o que possui o maior tamque de combustivel com cerca de: $tqc3 litros \n";
             } else {
-                echo "o carro 4 é o que possui o maior tamque de combustivel com cerca de: $tq_combustivel4 litros \n";
+                echo "o carro 4 é o que possui o maior tamque de combustivel com cerca de: $tqc4 litros \n";
             }
         };
 
-        function portaMalas(){
+        function portaMalas($por1, $por2, $por3=null, $por4=null){
 
-            $portaM1 = 306;
-            $portaM2 = 305;
-            $portaM3 = 304;
-            $portaM4 = 303;
 
-            if ($portaM1 > $portaM2 and $portaM1 > $portaM3 and $portaM1 > $portaM4){
-                echo "O carro 1 possui o maior porta malas entre eles com: $portaM1 litros \n";
-            } elseif ($portaM2 > $portaM1 and $portaM2 > $portaM3 and $portaM2 > $portaM4){
-                echo "O carro 2 possui o maior porta malas entre eles com: $portaM2 litros \n";
-            } elseif ($portaM3 > $portaM1 and $portaM3 > $portaM2 and $portaM3 > $portaM4){
-                echo "O carro 3 possui o maior porta malas entre eles com: $portaM3 litros \n";
+            if ($por1 > $por2 and $por1 > $por3 and $por1 > $por4){
+                echo "O carro 1 possui o maior porta malas entre eles com: $por1 litros \n";
+            } elseif ($por2 > $por1 and $por2 > $por3 and $por2 > $por4){
+                echo "O carro 2 possui o maior porta malas entre eles com: $por2 litros \n";
+            } elseif ($por3 > $por1 and $por3 > $por2 and $por3 > $por4){
+                echo "O carro 3 possui o maior porta malas entre eles com: $por3 litros \n";
             } else {
-                echo "O carro 4 possui o maior porta malas entre eles com: $portaM4 litros \n";
+                echo "O carro 4 possui o maior porta malas entre eles com: $por4 litros \n";
             }
         };
 
-        function consumoUrb(){
+        function consumoUrb($conu1, $conu2, $conu3=null, $conu4=null){
 
-            $consumo_urb1 = 10.6;
-            $consumo_urb2 = 10.5;
-            $consumo_urb3 = 10.4;
-            $consumo_urb4 = 10.3;
 
-            if ($consumo_urb1 > $consumo_urb2 and $consumo_urb1 > $consumo_urb3 and $consumo_urb1 > $consumo_urb4) {
-                echo "O carro 1 é o mais economico nas ruas das cidades com: $consumo_urb1 l/km \n";
-            } elseif ($consumo_urb2 > $consumo_urb1 and $consumo_urb2 > $consumo_urb3 and $consumo_urb2 > $consumo_urb4) {
-                echo "O carro 2 é o mais economico nas ruas das cidades com: $consumo_urb2 l/km \n";
-            } elseif ($consumo_urb3 > $consumo_urb2 and $consumo_urb3 > $consumo_urb1 and $consumo_urb3 > $consumo_urb4) {
-                echo "O carro 3 é o mais economico nas ruas das cidades com: $consumo_urb3 l/km \n";
+            if ($conu1 > $conu2 and $conu1 > $conu3 and $conu1 > $conu4) {
+                echo "O carro 1 é o mais economico nas ruas das cidades com: $conu1 km/l \n";
+            } elseif ($conu2 > $conu1 and $conu2 > $conu3 and $conu2 > $conu4) {
+                echo "O carro 2 é o mais economico nas ruas das cidades com: $conu2 km/l \n";
+            } elseif ($conu3 > $conu2 and $conu3 > $conu1 and $conu3 > $conu4) {
+                echo "O carro 3 é o mais economico nas ruas das cidades com: $conu3 km/l \n";
             } else {
-                echo "O carro 4 é o mais economico nas ruas das cidades com: $consumo_urb4 l/km \n";
+                echo "O carro 4 é o mais economico nas ruas das cidades com: $conu4 km/l \n";
             }
         };
 
-        function consumoRod(){
+        function consumoRod($conr1, $conr2, $conr3=null,$conr4=null){
 
-            $consumo_rod1 = 10.6;
-            $consumo_rod2 = 10.5;
-            $consumo_rod3 = 10.4;
-            $consumo_rod4 = 10.3;
 
-            if ($consumo_rod1 > $consumo_rod2 and $consumo_rod1 > $consumo_rod3 and $consumo_rod1 > $consumo_rod4) {
-                echo "O carro 1 é o mais economico nas estradas com: $consumo_rod1 l/km \n";
-            } elseif ($consumo_rod2 > $consumo_rod1 and $consumo_rod2 > $consumo_rod3 and $consumo_rod2 > $consumo_rod4) {
-                echo "O carro 2 é o mais economico nas estradas com: $consumo_rod2 l/km \n";
-            } elseif ($consumo_rod3 > $consumo_rod2 and $consumo_rod3 > $consumo_rod1 and $consumo_rod3 > $consumo_rod4) {
-                echo "O carro 3 é o mais economico nas estradas com: $consumo_rod3 l/km \n";
+            if ($conr1 > $conr2 and $conr1 > $conr3 and $conr1 > $conr4) {
+                echo "O carro 1 é o mais economico nas estradas com: $conr1 km/l \n";
+            } elseif ($conr2 > $conr1 and $conr2 > $conr3 and $conr2 > $conr4) {
+                echo "O carro 2 é o mais economico nas estradas com: $conr2 km/l \n";
+            } elseif ($conr3 > $conr2 and $conr3 > $conr1 and $conr3 > $conr4) {
+                echo "O carro 3 é o mais economico nas estradas com: $conr3 km/l \n";
             } else {
-                echo "O carro 4 é o mais economico nas estradas com: $consumo_rod4 l/km \n";
+                echo "O carro 4 é o mais economico nas estradas com: $conr4 km/l \n";
             }
         };
 
-        function largura(){
+        function largura($lar1, $lar2, $lar3=null, $lar4=null){
 
-            $largura1 = 1806;
-            $largura2 = 1805;
-            $largura3 = 1804;
-            $largura4 = 1803;
 
-            if ($largura1 > $largura2 and $largura1 > $largura3 and $largura1 > $largura4) {
-                echo "O carro 1 é o mais largo dentre eles com: $largura1 mm de largura \n";
-            } elseif ($largura2 > $largura1 and $largura2 > $largura3 and $largura2 > $largura4) {
-                echo "O carro 2 é o mais largo dentre eles com: $largura2 mm de largura \n";
-            } elseif ($largura3 > $largura2 and $largura3 > $largura1 and $largura3 > $largura4) {
-                echo "O carro 3 é o mais largo dentre eles com: $largura3 mm de largura \n";
+            if ($lar1 > $lar2 and $lar1 > $lar3 and $lar1 > $lar4) {
+                echo "O carro 1 é o mais largo dentre eles com: $lar1 mm de largura \n";
+            } elseif ($lar2 > $lar1 and $lar2 > $lar3 and $lar2 > $lar4) {
+                echo "O carro 2 é o mais largo dentre eles com: $lar2 mm de largura \n";
+            } elseif ($lar3 > $lar2 and $lar3 > $lar1 and $lar3 > $lar4) {
+                echo "O carro 3 é o mais largo dentre eles com: $lar3 mm de largura \n";
             } else {
-                echo "O carro 4 é o mais largo dentre eles com: $largura4 mm de largura \n";
+                echo "O carro 4 é o mais largo dentre eles com: $lar4 mm de largura \n";
             }
         };
 
@@ -205,15 +169,15 @@ function potencia($potencia1, $potencia2, $potencia3=null, $potencia4=null){
         }
 
         potencia(220, 300, 400);
-        preco();
-        altura();
-        comprimento();
-        largura();
-        velocidade();
-        tq_combustivel();
-        portaMalas();
-        consumoUrb();
-        consumoRod();
+        preco(600, 200);
+        altura(1500, 1850, 1900);
+        comprimento(1500, 1650, 2000);
+        largura(1200, 1300, 1500);
+        velocidade(100, 150, 120);
+        tq_combustivel(50, 70, 80);
+        portaMalas(100, 250, 500);
+        consumoUrb(7, 8, 9);
+        consumoRod(10, 11, 12);
         direcao(2, 1, 4, 4);
 
 ?>
